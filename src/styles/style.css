@@ -1,0 +1,477 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+/*?  Navbar */
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: brown;
+  display: flex;
+  flex-direction: row;
+  border-bottom: white 300px;
+  position: fixed;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.navbar a.active {
+  font-weight: bold;
+}
+
+.navbar .main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+}
+
+.navbar .main i {
+  display: none;
+}
+
+.navbar .main img {
+  height: 70px;
+}
+
+.navbar .main svg {
+  font-size: 40px;
+}
+
+.navbar .mainLink {
+  margin-left: auto;
+  margin-right: 50px;
+  transition: all 0.7s ease;
+}
+
+.navbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/*?  Navbar mobil */
+@media only screen and (max-width: 650px) {
+  .navbar .main {
+    padding-left: 0px !important;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .navbar .main a {
+    font-size: 13px;
+    transition: all 0.7s ease;
+  }
+
+  .navbar .main i {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .navbar .main .menuClose {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+
+  .navbar .mainC {
+    background-color: brown;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s ease;
+    z-index: 10;
+  }
+
+  .navbar .mainC a {
+    font-size: 35px !important;
+    padding: 20px;
+    transition: all 0.7s ease;
+  }
+
+  .navbar .mainLink {
+    display: none;
+    transition: all 0.7s ease;
+  }
+}
+
+/*?  Menu */
+.menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu .menuTitle {
+  font-size: 50px;
+  margin-top: 150px;
+  font-weight: bold;
+}
+
+.menu .menuList {
+  width: 70vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.menu .menuItem {
+  border-radius: 15px;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.menu .menuItem h6 {
+  color: #7a7a7a;
+}
+
+.menu .menuItem span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu .menuItem div {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu .menuItem:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+/*? Menu mobiles */
+
+@media only screen and (max-width: 1300px) {
+  .menuList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .menuList {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/*?  Footer */
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.footer .socialMedia svg {
+  color: white;
+  margin: 20px;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+.footer .socialMedia svg:hover {
+  scale: 1.1;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+}
+
+/*? About */
+
+.about {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about .aboutTop {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.about .aboutBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 50px 0;
+}
+
+.about .aboutBottom p {
+  text-align: center;
+  margin-top: 20px;
+  color: #7a7a7a;
+}
+
+.about .aboutBottom h1 {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 70px;
+  color: black;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*?  Contact */
+
+.contact {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  padding: 100px 0;
+}
+
+.contact .leftSide {
+  height: 100%;
+  flex: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact .rightSide {
+  height: 100%;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .rightSide h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 10;
+  font-size: 50px;
+  margin-left: 30px;
+}
+
+.contact .rightSide form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 30px;
+}
+
+.contact .rightSide form input {
+  height: 40px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #121619;
+  color: black;
+}
+
+.contact .rightSide form input::-moz-placeholder {
+  font-weight: bold;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact .rightSide form input::placeholder {
+  font-weight: bold;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact .rightSide form input:focus {
+  outline: none;
+}
+
+.contact .rightSide form textarea {
+  margin-top: 15px;
+  height: 70px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #121619;
+  color: black;
+}
+
+.contact .rightSide form textarea::-moz-placeholder {
+  font-weight: bold;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact .rightSide form textarea::placeholder {
+  font-weight: bold;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact .rightSide form textarea:focus {
+  outline: none;
+}
+
+.contact .rightSide form label {
+  margin-top: 15px;
+  color: grey;
+}
+
+.contact .rightSide form button {
+  margin-top: 40px;
+  max-width: 550px;
+  height: 40px;
+  border: none;
+  background-color: brown;
+  color: whitesmoke;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center;
+  transition: all 0.5s ease;
+  font-weight: bold;
+}
+
+.contact .rightSide form button:hover {
+  background-color: whitesmoke;
+  color: brown;
+}
+
+/*?  Contact Mobile */
+
+@media only screen and (max-width: 650px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact .leftSide {
+    padding: 180px 0;
+  }
+
+  .contact .rightSide h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .contact form {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .contact form textarea {
+    height: 50px;
+  }
+}
+
+/*? Home */
+
+.mainPage {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../assets/banneryeni.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.mainPage .order {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainPage .order button {
+  border: none;
+  cursor: pointer;
+  background-color: brown;
+  height: 50px;
+  width: 180px;
+  color: white;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.mainPage .order .mainTitle {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.mainPage .order .mainContent {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/*? Home mobile */
+@media only screen and (max-width: 650px) {
+  .mainPage .order {
+    margin-left: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+  }
+
+  .mainPage .order .mainTitle {
+    font-size: 40px;
+  }
+
+  .mainPage .order .mainContent {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
